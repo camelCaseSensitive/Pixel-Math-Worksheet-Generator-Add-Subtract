@@ -104,11 +104,22 @@
         <button id="btnPixelate" class="grow">Pixelate</button>
         <button id="btnGenerate" class="grow">Generate</button>
       </div>
+      
+      <div class="row" style="margin-top:4px;">
+        <label style="display:flex;align-items:center;gap:6px;">
+          <input id="includeAnswerKey" type="checkbox" checked />
+          Include Answer Key in PDF
+        </label>
+      </div>
+      
       <div class="row">
         <button id="btnSave" class="grow secondary">Save PDF</button>
       </div>
       <div class="note">“Save PDF” opens the print dialog; choose “Save as PDF”.</div>
     </div>
+    
+    
+
 
     <div class="card">
       <div class="label">Original (fit)</div>
@@ -147,6 +158,7 @@
   const colsEl = document.getElementById('cols');
   const rowsEl = document.getElementById('rows');
   const kEl    = document.getElementById('kcolors');
+  const includeAnswerKeyEl = document.getElementById('includeAnswerKey');
 
   const origCanvas = document.getElementById('origCanvas');
   const pixCanvas  = document.getElementById('pixCanvas');
@@ -646,17 +658,24 @@
     worksheetPreviewImg.src = wsURL;
     worksheetPrintImg.src = wsURL;
 
-    // Page 2: answer key (full page color)
-    const ansCanvas = renderAnswerCanvas();
-    const ansURL = ansCanvas.toDataURL('image/png');
-    answerPreviewImg.src = ansURL;
-    answerPrintImg.src = ansURL;
+    // Conditionally include answer key
+    if (includeAnswerKeyEl.checked) {
+      const ansCanvas = renderAnswerCanvas();
+      const ansURL = ansCanvas.toDataURL('image/png');
+      answerPreviewImg.src = ansURL;
+      answerPrintImg.src = ansURL;
+      answerPrintImg.style.display = "block";
+    } else {
+      answerPreviewImg.removeAttribute('src');
+      answerPrintImg.removeAttribute('src');
+      answerPrintImg.style.display = "none";
+    }
 
     worksheetPreviewImg.scrollIntoView({ behavior:'smooth', block:'center' });
   });
 
   document.getElementById('btnSave').addEventListener('click', ()=>{
-    if (!worksheetPrintImg.src || !answerPrintImg.src) {
+    if (!worksheetPrintImg.src) {
       const proceed = confirm('You have not generated worksheet/answer images yet.\nOpen the print dialog anyway?');
       if (!proceed) return;
     }
