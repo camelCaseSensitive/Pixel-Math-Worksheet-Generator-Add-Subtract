@@ -18,15 +18,16 @@ Browser tool for generating color by numbers pixel math worksheets for addition 
 
 
 <p align="left">
-  <a href="https://github.com/camelCaseSensitive/Pixel-Math-Worksheet-Generator-Add-Subtract/blob/main/Pikachu%20Pixel%20Math.pdf/">
-    <img src="./Pikachu Math Worksheet Blank.png" alt="Pikachu Pixel Math PDF" title="Pikachu Pixel Math PDF" width="400px">
+  <a href="https://github.com/camelCaseSensitive/Pixel-Math-Worksheet-Generator-Add-Subtract/blob/main/Pikachu%20Pixel%20Math.pdf">
+    <img src="./Pikachu Math Worksheet Blank.png" alt="Pikachu Pixel Math PDF" title="Pikachu Pixel Math PDF" width="400px" style="margin-right:10px;">
+  </a>
+  <a href="https://github.com/camelCaseSensitive/Pixel-Math-Worksheet-Generator-Add-Subtract/blob/main/Pikachu%20Pixel%20Math.pdf">
+    <img src="./Pikachu Math Worksheet Answers.png" alt="Pikachu Pixel Math PDF" title="Pikachu Pixel Math PDF" width="400px">
   </a>
 </p>
 
-<p align="left">
-  <a href="https://github.com/camelCaseSensitive/Pixel-Math-Worksheet-Generator-Add-Subtract/blob/main/Pikachu%20Pixel%20Math.pdf/">
-    <img src="./Pikachu Math Worksheet Answers.png" alt="Pikachu Pixel Math PDF" title="Pikachu Pixel Math PDF">
-  </a>
-</p>
 
-https://www.reddit.com/r/pixelmath/
+<a href="https://www.reddit.com/r/pixelmath/" target="_blank">
+  <img src="https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png" alt="Reddit" width="24" style="vertical-align:middle; margin-right:6px;">
+  r/pixelmath
+</a>
