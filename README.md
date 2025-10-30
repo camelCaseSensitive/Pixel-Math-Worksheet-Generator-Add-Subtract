@@ -19,7 +19,7 @@ Browser tool for generating color by numbers pixel math worksheets for addition 
 
 <p align="left">
   <a href="https://github.com/camelCaseSensitive/Pixel-Math-Worksheet-Generator-Add-Subtract/blob/main/Pikachu%20Pixel%20Math.pdf/">
-    <img src="./Pikachu Math Worksheet Blank.png" alt="Pikachu Pixel Math PDF" title="Pikachu Pixel Math PDF" width=400>
+    <img src="./Pikachu Math Worksheet Blank.png" alt="Pikachu Pixel Math PDF" title="Pikachu Pixel Math PDF" width="400px">
   </a>
 </p>
 
