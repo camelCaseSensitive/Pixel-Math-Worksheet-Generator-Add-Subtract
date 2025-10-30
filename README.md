@@ -1,6 +1,14 @@
 # Pixel-Math-Worksheet-Generator-Add-Subtract
 Browser tool for generating color by numbers pixel math worksheets for addition and subtraction practice. 
 
+1) Upload Pixel art
+2) Set the number of pixels across and down to match your pixel art
+3) Choose number of colors to use
+4) Click "Pixelate"
+5) Set the answer for each color (default is 1, 2, 3...)
+6) Click "Generate"
+7) Save as PDF or save the images directly. 
+
 <p align="left">
   <a href="https://camelcasesensitive.github.io/Pixel-Math-Worksheet-Generator-Add-Subtract/">
     <img src="./pikachu workflow.png" alt="Pikachu Pixel Math" title="Pikachu">
