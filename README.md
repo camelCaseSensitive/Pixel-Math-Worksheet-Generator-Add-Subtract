@@ -2,8 +2,8 @@
 Browser tool for generating color by numbers pixel math worksheets for addition and subtraction practice. 
 
 1) Upload Pixel art
-2) Set the number of pixels across and down to match your pixel art
-3) Choose number of colors to use
+2) Set pixel dimensions (across and down)
+3) Set number of colors to use
 4) Click "Pixelate"
 5) Set the answer for each color (default is 1, 2, 3...)
 6) Click "Generate"
